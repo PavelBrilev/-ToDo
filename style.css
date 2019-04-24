@@ -1,0 +1,339 @@
+
+
+
+
+body {
+background: rgb(216, 216, 216);
+font-family: "Arial", sans-serif;
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+h1 {
+float: left;
+color: white;
+font-size:30px;
+padding: 5px 0px 0px 10px;
+font-family: Luminari, fantasy;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+svg {
+float: left;
+padding: 10px 0px 0px 25px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.sidebar {
+min-height: 100vh;
+padding: 0;
+margin: 0;
+float: left;
+width: 250px;
+background: rgb(26, 26, 59);
+border-right: 1px solid rgb(61, 61, 61);
+}
+
+.main {
+padding: 0;
+margin-left: 250px;
+background: rgb(216, 216, 216);
+height: 700px;
+
+}
+
+.main-header {
+height: 70px;
+background: gray;
+margin: 0;
+padding: 0;
+border-bottom: 1px solid rgb(61, 61, 61);
+}
+
+.main-plane-completed {
+min-height: 100px;
+background: rgb(216, 216, 216);
+margin: 0;
+padding: 0;
+}
+
+.btn-home, 
+.btn-settings {
+display: inline-block;
+width: 245px;
+height: 50px;
+color: white;
+font-size: 20px;
+text-align: center;
+vertical-align: middle;
+text-decoration: none; 
+padding-top: 20px;
+}
+.btn-home:hover, 
+.btn-settings:hover {
+border-left: 5px solid blue;
+background: rgba(77, 77, 77, 0.432);
+}
+.btn-home:active,
+.btn-settings:active {
+ color: black;
+    }
+
+.btn-add {
+font-size: 16px; 
+float: right;
+width: 130px;
+height: 25px;
+background: blue;
+border-radius: 15px;
+color: white;
+text-decoration: none; 
+text-align: center;
+padding-top: 5px;
+margin: 20px 170px 0px 0px;
+
+}
+
+.btn-add:hover {
+ font-size: 18px;
+}
+
+.btn-add:active {
+    color: black;
+   }
+
+.btn-add span {
+opacity: 0.5;
+padding-right: 10px;
+
+}
+
+.menu {
+    display: inline;
+    
+}
+
+.menu img {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    display: inline;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+border-radius: 50%;
+border: 1px solid rgb(61, 61, 61);
+
+}
+
+.menu a {
+position: absolute;
+top: 20px;
+right: 50px;
+width: 30px;
+height: 30px;
+background-image: url("img/sprites.png");
+background-repeat: no-repeat;
+background-position: -305px -110px;
+
+}
+
+
+.menu a:active {
+background-image: url("img/sprites.png");
+background-repeat: no-repeat;
+background-position: -280px -110px;}
+    }
+
+.sort-letters {
+display: inline;
+}
+
+
+
+.sort-letters a {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 25px;
+    right: 330px;
+    
+}
+
+.sort-letters a::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/sprites.png");
+    background-repeat: no-repeat;
+    background-position: -425px -113px;
+
+}
+.sort-letters a:active {
+color: black;
+
+}
+
+.sort-1 {
+    display: inline;
+    }
+
+.sort-1 a {
+    position: absolute;
+    top: 20px;
+    right: 360px;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/sprites.png");
+    background-repeat: no-repeat;
+    background-position: -400px 7px;
+}
+
+.list {
+    display: inline;
+}
+
+.list a { 
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/sprites.png");
+    background-repeat: no-repeat;
+    background-position: -330px -40px;
+
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    left: 270px;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/sprites.png");
+    background-repeat: no-repeat;
+    background-position: -330px -40px; 
+}
+
+
+.item {
+    display: block;
+    width: 95%;
+    height: 78px;
+    background: white;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid rgb(61, 61, 61);
+    }
+ 
+.date {
+    text-decoration: none;
+    font-size: 12px;
+    opacity: 0.4;
+float: right;
+margin: 5px;
+}
+
+.priority {
+    text-decoration: none;
+    font-size: 12px;
+float: right;
+margin: 5px;
+}
+
+.item h3,
+.item p {
+margin: 5px 0px 0px 50px;
+font-size: 14px;
+
+}
+
+.todo-p {
+font-style: italic;
+
+}
+
+.red {
+background: rgb(133, 63, 63);
+}
+
+.blue {
+background: rgb(26, 26, 59);
+}
+
+
+
+
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal--show {
+    display: block;
+  }
+  
+  .modal::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .modal__content {
+    position: relative;
+    width: 300px;
+    height: 120px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: -1px 5px 12px 0 rgba(89, 90, 90, 0.3);
+    z-index: 2;
+  }
+
+  .button-red {
+      
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: red;
+
+  }
+
+  .button-blue {
+      
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: blue;
+
+  }
+ 
+  
